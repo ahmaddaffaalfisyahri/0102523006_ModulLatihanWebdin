@@ -82,11 +82,8 @@ export default async function EmployeesPage({
           
           <a
             href="#employee-table"
-            className="inline-flex items-center justify-center gap-2 px-5 py-2.5 bg-white hover:bg-gray-50 text-gray-700 hover:text-blue-600 font-semibold text-sm rounded-xl border border-gray-200 shadow-sm transition-all duration-200 hover:shadow-md hover:border-blue-200 active:scale-[0.98] self-start sm:self-auto group"
+            className="inline-flex items-center justify-center px-5 py-2.5 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-700 hover:to-indigo-700 text-white font-semibold text-sm rounded-xl shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.98] self-start sm:self-auto"
           >
-            <svg className="w-4 h-4 text-gray-400 group-hover:text-blue-600 transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 13l-7 7-7-7m14-6l-7 7-7-7" />
-            </svg>
             Lihat Tabel Karyawan
           </a>
         </div>

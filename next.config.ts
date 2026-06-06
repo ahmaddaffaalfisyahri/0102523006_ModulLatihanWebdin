@@ -1,7 +1,11 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [],
+  },
+  // Disable server-side file operations in strict mode for uploads
+  serverExternalPackages: [],
 };
 
 export default nextConfig;

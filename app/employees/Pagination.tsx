@@ -16,7 +16,7 @@ export default function Pagination({ currentPage, totalPages }: Props) {
   function goToPage(page: number) {
     const params = new URLSearchParams(searchParams.toString());
     params.set('page', page.toString());
-    router.push(`/employees?${params.toString()}`);
+    router.push(`/employees?${params.toString()}`, { scroll: false });
   }
 
   // Generate page numbers

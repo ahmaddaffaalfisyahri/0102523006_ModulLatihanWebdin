@@ -20,13 +20,14 @@ export default function SearchFilter() {
     if (search) params.set('search', search);
     if (status) params.set('status', status);
     params.set('page', '1'); // Reset ke halaman 1 saat filter berubah
-    router.push(`/employees?${params.toString()}`);
+    router.push(`/employees?${params.toString()}`, { scroll: false });
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function handleReset() {
     setSearch('');
     setStatus('');
-    router.push('/employees');
+    router.push('/employees', { scroll: false });
   }
 
   function handleKeyDown(e: React.KeyboardEvent) {
